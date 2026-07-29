@@ -1,6 +1,6 @@
-# Validation Report - Slice 1 (Product Registry MVP)
+# Validation Report - Slice 1 + Slice 2 (Product Registry)
 
-Date: 2026-07-29
+Date: 2026-07-29 (Slice 2 added: `TBD-RET-33x81`)
 Schema: `schema/product.schema.json` (JSON Schema Draft 2020-12)
 Validator script: `validate.py` (in this repo)
 
@@ -37,8 +37,9 @@ relative path (`../schema/product.schema.json`) that works locally today.
 | `products/CAN-10x10.json` | PASS |
 | `products/CW-10-DS.json` | PASS |
 | `products/TBD-6-S.json` | PASS |
+| `products/TBD-RET-33x81.json` | PASS |
 
-All three records validate with zero errors, including the `$schema` pointer to
+All four records validate with zero errors, including the `$schema` pointer to
 `../schema/product.schema.json`, all 16 required `public` fields, and all 6 required
 `internal` fields.
 
@@ -75,7 +76,7 @@ at the root and on both `public` and `internal`.
 
 ## Overall
 
-**PASS** - 3/3 product files valid, 11/11 strictness negative tests correctly rejected,
+**PASS** - 4/4 product files valid, 11/11 strictness negative tests correctly rejected,
 `validate.py` exit code 0.
 
 ## Open items (not schema failures)
@@ -86,3 +87,4 @@ Each of these is recorded in the relevant record's `internal.notes`:
 - `CAN-10x10`: 117.6 in runs edge-to-edge across the bottom valance per HBS-12569 (which also calls out a 17 in valance); factory geometry stays authoritative. `safe_zone_in` pending factory-template measurement.
 - `CW-10-DS`: exact finished dimensions unresolved (nominal 10 x 7 ft recorded in notes only); factory-template measurement must populate them before automated preflight is enabled.
 - All three: `ordant_product_id` null (unassigned) and `default_substrate` null (unconfirmed).
+- `TBD-RET-33x81` (Slice 2, added 2026-07-29): geometry verified from the factory template `Standard-Retractable_33x81_PRINT-2-1-2.pdf` during HBS-12586. Template page (print-ready bleed) 32.97 x 82.00 in, trim 32.5 x 81.9 in, safe rect 32.1 x 81.5 in (0.2 in inset from trim on all four sides, which is what is published in `safe_zone_in`). `finished_w_in`/`finished_h_in` publish the customer-facing nominal 33 x 81 in. `corner_radius_in` is 0.0 (straight rectangle). `dpi_floor` is 100, higher than the 50 dpi sewn-fabric floor used elsewhere. `wide_format` is false (aspect ~0.41). `template_drive_id`, `ordant_product_id`, and `default_substrate` remain null.

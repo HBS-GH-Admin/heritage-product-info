@@ -1,0 +1,29 @@
+{
+  "$schema": "../schema/product.schema.json",
+  "public": {
+    "sku": "TBD-RET-33x81",
+    "ordant_product_name": "Standard Retractable Banner - 33 x 81",
+    "product_family": "Retractable Banner Stand",
+    "description_short": "Standard pull-up retractable banner, finished 33 x 81 in, single-sided.",
+    "description_long": "The Standard Retractable Banner is a 33 x 81 in single-sided pull-up banner graphic that mounts into a retractable base stand for tabletop and floor display. Artwork should be supplied at a minimum of 100 dpi at final size to hold up on the sewn banner substrate. Keep critical content clear of the finished edge; the safe zone is a 0.2 in inset from the trim edge on all four sides. The print-ready file size is 32.97 x 82.00 in and includes the template bleed used by the factory die. Substrate and retractable base hardware are confirmed per order and are not specified by this registry entry.",
+    "finished_w_in": 33.0,
+    "finished_h_in": 81.0,
+    "sides": "SS",
+    "corner_radius_in": 0.0,
+    "safe_zone_in": 0.2,
+    "dpi_floor": 100,
+    "wide_format": false,
+    "default_substrate": null,
+    "hero_image_url": null,
+    "template_download_url": null,
+    "pricing_guide_url": null
+  },
+  "internal": {
+    "ordant_product_id": null,
+    "vendor": "China Flag Makers (CFM)",
+    "vendor_sku": "TBD-RET-33x81",
+    "template_drive_id": null,
+    "template_local_cache": "cache/templates/Standard-Retractable_33x81_PRINT-2-1-2.pdf",
+    "notes": "Geometry verified from the factory template Standard-Retractable_33x81_PRINT-2-1-2.pdf during HBS-12586 (AORA POCKET'S). Template page (print-ready bleed area) measures 32.97 x 82.00 in. Outer trim rectangle measures 32.5 x 81.9 in. Inner safe rectangle measures 32.1 x 81.5 in, which is a 0.2 in inset from trim on all four sides; that is the value published in safe_zone_in. finished_w_in and finished_h_in are the nominal customer-facing finished visible size of 33 x 81 in that the product is sold as. corner_radius_in is 0.0 because the die is a straight rectangle with no fillet. dpi_floor is set to 100 as the retractable-banner resolution floor and is higher than the 50 dpi sewn-fabric floor used on tabletop banners and canopy tops. wide_format is false based on the ~0.41 aspect ratio, which is well under the 3:1 wide-format threshold used elsewhere. sides is SS because the standard retractable prints a single visible face. default_substrate is null because no substrate has been explicitly confirmed for this SKU. template_drive_id is unresolved and should be backfilled once the factory template is filed under the HBS Drive template folder. ordant_product_id is not yet assigned. vendor_sku is set to TBD-RET-33x81 to mirror the seed key while a real vendor SKU is confirmed. pricing_guide_url is null because the pricing guide row has not been confirmed; pricing never comes from this registry and the PO remains the source of truth. Reference job: HBS-12586, AORA POCKET'S Standard Retractable, proof v01 built on House Template v2.1 on 2026-07-29."
+  }
+}
