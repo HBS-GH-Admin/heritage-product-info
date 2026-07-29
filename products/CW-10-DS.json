@@ -1,0 +1,29 @@
+{
+  "$schema": "../schema/product.schema.json",
+  "public": {
+    "sku": "CW-10-DS",
+    "ordant_product_name": "Canopy Wall - 40mm Hex Frame - 10ft / Double Sided / Full Wall",
+    "product_family": "Pop-Up Canopy Full Wall",
+    "description_short": "Double-sided full wall graphic for a 10ft 40mm hex-frame pop-up canopy, supplied as two separate side files.",
+    "description_long": "Canopy Wall - 40mm Hex Frame - 10ft / Double Sided / Full Wall is a full-wall graphic for a 10ft pop-up canopy built on a 40mm hex frame. It is double-sided and requires two separate artwork files, one for each side, because the two sides carry different layouts. Exact finished dimensions are not yet confirmed against the factory template and are therefore not published in this entry. Artwork should be supplied at a minimum of 50 dpi at final size.",
+    "finished_w_in": null,
+    "finished_h_in": null,
+    "sides": "DS-two-files",
+    "corner_radius_in": null,
+    "safe_zone_in": null,
+    "dpi_floor": 50,
+    "wide_format": true,
+    "default_substrate": null,
+    "hero_image_url": null,
+    "template_download_url": null,
+    "pricing_guide_url": "https://docs.google.com/spreadsheets/d/1ybzuLeKVR_GFcrG51sw8s9xPDOLOZMEmieJ8Npmgt-8/edit#gid=600624280&range=43:43"
+  },
+  "internal": {
+    "ordant_product_id": null,
+    "vendor": "China Flag Makers (CFM)",
+    "vendor_sku": "CW-10-DS",
+    "template_drive_id": "1ztYnRUhIrX0pDHU-kg4OuxWQ0AXaXiX1",
+    "template_local_cache": "cache/templates/10x10_40_MM_HEX_UnBranded Specs_Wall.ai",
+    "notes": "Exact factory finished dimensions are unresolved, so finished_w_in and finished_h_in are null. The case study calls this a nominal 10 x 7 ft wall; that nominal figure is recorded here only and must not be published as a finished size. A factory-template measurement must populate the exact dimensions before automated preflight is enabled for this SKU. corner_radius_in and safe_zone_in are also null pending that same factory-template measurement. dpi_floor of 50 is the current sewn-fabric preflight floor. sides is DS-two-files because the case study explicitly carries separate SIDE 1 and SIDE 2 layouts. The Ordant line description includes Left Wall / Right Wall / Back Wall. The raw SIDE 1 / SIDE 2 layout text belongs in Ordant Customer Notes and is not auto-parsed by the registry. Pricing never comes from this registry; pricing_guide_url is a deep link to pricing guide row 43 for human reference only, and the PO is the source of truth. Source file name: 10x10_40_MM_HEX_UnBranded Specs_Wall.ai. default_substrate is null because no substrate has been explicitly confirmed. ordant_product_id is not yet assigned."
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Heritage Product Registry Product",
+  "description": "One product (SKU) record. Exactly two blocks: public (customer-facing / preflight facts) and internal (operational identifiers and notes). Pricing values and pricing computation are out of scope; only links to pricing guides are permitted.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["public", "internal"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Optional editor hint pointing at ../schema/product.schema.json."
+    },
+    "public": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sku",
+        "ordant_product_name",
+        "product_family",
+        "description_short",
+        "description_long",
+        "finished_w_in",
+        "finished_h_in",
+        "sides",
+        "corner_radius_in",
+        "safe_zone_in",
+        "dpi_floor",
+        "wide_format",
+        "default_substrate",
+        "hero_image_url",
+        "template_download_url",
+        "pricing_guide_url"
+      ],
+      "properties": {
+        "sku": { "$ref": "#/$defs/nonEmptyString" },
+        "ordant_product_name": { "$ref": "#/$defs/nonEmptyString" },
+        "product_family": { "$ref": "#/$defs/nonEmptyString" },
+        "description_short": { "$ref": "#/$defs/nonEmptyString" },
+        "description_long": { "$ref": "#/$defs/nonEmptyString" },
+        "finished_w_in": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+        "finished_h_in": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+        "sides": {
+          "type": "string",
+          "enum": ["SS", "DS-same-art", "DS-two-files"]
+        },
+        "corner_radius_in": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+        "safe_zone_in": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+        "dpi_floor": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "wide_format": { "type": "boolean" },
+        "default_substrate": { "$ref": "#/$defs/nullableNonEmptyString" },
+        "hero_image_url": { "$ref": "#/$defs/nullableUri" },
+        "template_download_url": { "$ref": "#/$defs/nullableUri" },
+        "pricing_guide_url": { "$ref": "#/$defs/nullableUri" }
+      }
+    },
+    "internal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ordant_product_id",
+        "vendor",
+        "vendor_sku",
+        "template_drive_id",
+        "template_local_cache",
+        "notes"
+      ],
+      "properties": {
+        "ordant_product_id": { "$ref": "#/$defs/nullablePositiveInteger" },
+        "vendor": { "$ref": "#/$defs/nonEmptyString" },
+        "vendor_sku": { "$ref": "#/$defs/nullableNonEmptyString" },
+        "template_drive_id": { "$ref": "#/$defs/nullableNonEmptyString" },
+        "template_local_cache": { "$ref": "#/$defs/nullableNonEmptyString" },
+        "notes": { "$ref": "#/$defs/nullableNonEmptyString" }
+      }
+    }
+  },
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nullableNonEmptyString": {
+      "type": ["string", "null"],
+      "minLength": 1
+    },
+    "nullablePositiveInteger": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    },
+    "nullableNonNegativeNumber": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "nullableUri": {
+      "type": ["string", "null"],
+      "minLength": 1,
+      "format": "uri"
+    }
+  }
+}

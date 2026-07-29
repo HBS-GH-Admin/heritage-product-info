@@ -1,0 +1,29 @@
+{
+  "$schema": "../schema/product.schema.json",
+  "public": {
+    "sku": "CAN-10x10",
+    "ordant_product_name": "10x10 Pop-Up Canopy Tent Top",
+    "product_family": "Pop-Up Canopy Tent Top",
+    "description_short": "Custom printed replacement top for a 10x10 40 mm hex-frame pop-up canopy, finished 117.6 x 117.6 in.",
+    "description_long": "The 10x10 Pop-Up Canopy Tent Top is a custom printed replacement top for a 10x10 pop-up canopy built on a 40 mm hex frame. It is a single printed canopy-top surface with a finished footprint of 117.6 x 117.6 in. Artwork should be supplied at a minimum of 50 dpi at final size. This registry entry covers the printed top only; corner radius and safe zone are not yet published for this SKU.",
+    "finished_w_in": 117.6,
+    "finished_h_in": 117.6,
+    "sides": "SS",
+    "corner_radius_in": null,
+    "safe_zone_in": null,
+    "dpi_floor": 50,
+    "wide_format": false,
+    "default_substrate": null,
+    "hero_image_url": null,
+    "template_download_url": null,
+    "pricing_guide_url": null
+  },
+  "internal": {
+    "ordant_product_id": null,
+    "vendor": "China Flag Makers (CFM)",
+    "vendor_sku": "CAN-10x10",
+    "template_drive_id": "1e_oBlMBRzK5QSTwvkUfiqjKjBDy4xjqz",
+    "template_local_cache": "cache/templates/10x10_40_MM_HEX_UnBranded Specs_Top.ai",
+    "notes": "Finished dimensions of 117.6 x 117.6 in are taken from the HBS-12569 reference. That same reference also calls out a 17 in valance, and the 117.6 in dimension runs edge-to-edge across the bottom valance rather than across the flat top panel alone. Factory geometry should remain authoritative; if the factory template disagrees with the reference, the factory template wins. safe_zone_in is null pending factory-template measurement, and corner_radius_in does not apply as measured. dpi_floor of 50 is the current sewn-fabric preflight floor, not a SKU-specific value. sides is SS because this is a single printed canopy-top surface, not a double-sided panel. wide_format is false given the square footprint. Source file name: 10x10_40_MM_HEX_UnBranded Specs_Top.ai. default_substrate is null because no substrate has been explicitly confirmed. Pricing never comes from this registry and the PO remains the source of truth. ordant_product_id is not yet assigned."
+  }
+}
