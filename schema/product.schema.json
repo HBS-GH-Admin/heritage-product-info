@@ -65,6 +65,7 @@
         "vendor_sku",
         "template_drive_id",
         "template_local_cache",
+        "template_repo_path",
         "notes"
       ],
       "properties": {
@@ -73,6 +74,11 @@
         "vendor_sku": { "$ref": "#/$defs/nullableNonEmptyString" },
         "template_drive_id": { "$ref": "#/$defs/nullableNonEmptyString" },
         "template_local_cache": { "$ref": "#/$defs/nullableNonEmptyString" },
+        "template_repo_path": {
+          "description": "Repo-relative path to the layered .ai template for this SKU, under templates/. Null when no template has been ingested yet.",
+          "type": ["string", "null"],
+          "pattern": "^templates/[A-Za-z0-9._-]+\\.ai$"
+        },
         "notes": { "$ref": "#/$defs/nullableNonEmptyString" }
       }
     }

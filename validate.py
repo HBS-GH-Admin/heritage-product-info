@@ -47,6 +47,10 @@ NEGATIVE_CASES = [
      lambda d: d["internal"].update({"ordant_product_id": "12345"})),
     ("zero ordant_product_id",
      lambda d: d["internal"].update({"ordant_product_id": 0})),
+    ("template_repo_path outside templates/ folder",
+     lambda d: d["internal"].update({"template_repo_path": "other/AF-AF-11-DS.ai"})),
+    ("template_repo_path with wrong extension",
+     lambda d: d["internal"].update({"template_repo_path": "templates/AF-AF-11-DS.pdf"})),
 ]
 
 

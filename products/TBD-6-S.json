@@ -24,6 +24,7 @@
     "vendor_sku": "TBD-6-S",
     "template_drive_id": null,
     "template_local_cache": "cache/templates/Table-top-banner-S-6FT-other-fabircs-4-2.ai",
+    "template_repo_path": null,
     "notes": "Factory template filename as documented: Table-top-banner-S-6FT-other-fabircs-4-2.ai (filename spelling preserved as received from vendor). safe_zone_in of 1.0 comes from the House Template v2 reference build default and must be verified against the factory die before it is trusted for automated preflight. template_drive_id is unresolved. default_substrate is null because no substrate has been explicitly confirmed for this SKU. pricing_guide_url is null because the pricing guide row has not been confirmed; pricing never comes from this registry and the PO remains the source of truth. vendor_sku is set to TBD-6-S because the seed key and the vendor/product key are treated as the same value in existing records. ordant_product_id is not yet assigned."
   }
 }
