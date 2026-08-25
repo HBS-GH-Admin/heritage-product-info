@@ -1,0 +1,30 @@
+{
+  "$schema": "../schema/product.schema.json",
+  "public": {
+    "sku": "AF-AF-11-DS",
+    "ordant_product_name": "Angled Feather Flag - 11ft - Double Sided",
+    "product_family": "Feather Flag",
+    "description_short": "Double-sided 11ft angled feather flag with curved top edge and pole-pocket sleeve, printed on both faces of a single continuous fabric panel.",
+    "description_long": "Angled Feather Flag - 11ft - Double Sided is a large-format feather flag with a distinctive angled/curved top edge and a pole-pocket sleeve at the bottom. It is a double-sided product where the front and back share a single continuous fabric panel joined at the pole edge; the printed die outline preserves the pole pockets and the curved top on both faces. Finished panel dimensions per face are 27.56 in wide by 118.11 in tall. The two sides may carry the same art or different art depending on the order; the sides value is DS-two-files to reflect that either mode is possible. Artwork should be supplied at a minimum of 100 dpi at final size.",
+    "finished_w_in": 27.56,
+    "finished_h_in": 118.11,
+    "sides": "DS-two-files",
+    "corner_radius_in": null,
+    "safe_zone_in": null,
+    "dpi_floor": 100,
+    "wide_format": true,
+    "default_substrate": null,
+    "hero_image_url": null,
+    "template_download_url": null,
+    "pricing_guide_url": null
+  },
+  "internal": {
+    "ordant_product_id": null,
+    "vendor": "China Flag Makers (CFM)",
+    "vendor_sku": "AF-AF-11-DS",
+    "template_drive_id": null,
+    "template_local_cache": null,
+    "template_repo_path": "templates/AF-AF-11-DS.ai",
+    "notes": "Seed record created 2026-08-25 as the first SKU to exercise the templates/ folder pattern. Source template file is Deluxe-Angled-11ft-Double-1.ai supplied by Luke; committed here as templates/AF-AF-11-DS.ai. Finished dimensions 27.56 in x 118.11 in are drawn from the factory proof for HBS-12632 (HopeFront Church) and match the callouts on that proof. corner_radius_in and safe_zone_in are null pending measurement against the layered template. sides is DS-two-files because double-sided angled flags may carry the same or different art per face and the placement engine should treat each face as an independent side. dpi_floor of 100 is a conservative feather-flag floor and may be lowered after fabric-print behavior is confirmed on a real job. default_substrate, pricing_guide_url, hero_image_url, and template_download_url are pending. ordant_product_id has not yet been captured from Ordant. template_drive_id and template_local_cache are left null because the GitHub repo path is now the canonical template location for this SKU."
+  }
+}
