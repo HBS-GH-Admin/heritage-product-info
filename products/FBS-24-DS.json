@@ -1,0 +1,30 @@
+{
+  "$schema": "../schema/product.schema.json",
+  "public": {
+    "sku": "FBS-24-DS",
+    "ordant_product_name": "Fabric Banner Stand - 24in - Double Sided",
+    "product_family": "Fabric Banner Stand",
+    "description_short": "Double-sided 24in wide fabric banner stand with radiused top corners and square bottom, printed on both faces of a single fabric panel.",
+    "description_long": "Fabric Banner Stand - 24in - Double Sided is a fabric banner stand with a 24in wide graphic and a finished panel height of 90in per face. Corners are radiused at the top and square at the bottom. It is double-sided; front and back typically carry the same art but may carry different art per face, so sides is DS-two-files to keep both modes supported. Finished panel dimensions per face are 24.129in wide by 89.764in tall as measured off the factory die. Artwork should be supplied at a minimum of 100 dpi at final size. The safe zone is 0.5in inset from the die edge.",
+    "finished_w_in": 24.129,
+    "finished_h_in": 89.764,
+    "sides": "DS-two-files",
+    "corner_radius_in": 4.7,
+    "safe_zone_in": 0.5,
+    "dpi_floor": 100,
+    "wide_format": false,
+    "default_substrate": null,
+    "hero_image_url": null,
+    "template_download_url": null,
+    "pricing_guide_url": null
+  },
+  "internal": {
+    "ordant_product_id": 1267,
+    "vendor": "Vimbo",
+    "vendor_sku": "FBS-24-DS",
+    "template_drive_id": null,
+    "template_local_cache": null,
+    "template_repo_path": "templates/FBS-24-DS.ai",
+    "notes": "Seed record created 2026-08-26 from HBS-12633 (Vivid Exp / InFocus, Mark Ball). Source template is Vimbo-Fabric-Banner-Stand-Round-Corners-2FT-5-2.ai supplied by Luke and committed here as templates/FBS-24-DS.ai. Companion die-geometry file at templates/FBS-24-DS.die.json carries the extracted polylines and die-window placement coordinates for both Front and Back so the placement engine does not have to re-detect the die from the raster. Die geometry (extracted via PyMuPDF get_drawings on the .ai): template page 130.458in x 136.227in; front die rect at page x0=30.12in y0=34.33in, back die rect at page x0=94.72in y0=34.33in; both 24.129in x 89.764in with radiused top corners (approx 4.7in radius) and square bottom; 47-point deduped polyline per die. Nominal product size is 24in x 90in; the 0.72in shortfall on height is the sewn hem/pocket allowance. safe_zone_in of 0.5 is a working default and should be verified against factory printed guide when a template with printed safe rectangles arrives. ordant_product_id 1267 confirmed against Ordant order 12633 (product 1267, Fabric Banner Stand Double Sided). Also referenced by HBS-12591 (Small Groups) which used the same SKU. corner_radius_in is approximate; a precise arc-fit against the polyline points would sharpen it. dpi_floor of 100 is conservative for fabric banner stands. hero_image_url, template_download_url, pricing_guide_url, and default_substrate are pending."
+  }
+}
